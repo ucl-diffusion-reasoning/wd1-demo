@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <meta charset="utf-8" />
+        <meta name="description" content="DESCRIPTION META TAG" />
+        <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+        <meta
+            property="og:description"
+            content="SOCIAL MEDIA DESCRIPTION TAG TAG"
+        />
+        <meta property="og:url" content="URL OF THE WEBSITE" />
+
+        <meta
+            property="og:image"
+            content="static/image/your_banner_image.png"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
+        <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG" />
+        <meta
+            name="twitter:description"
+            content="TWITTER BANNER DESCRIPTION META TAG"
+        />
+
+        <meta
+            name="twitter:image"
+            content="static/images/your_twitter_banner_image.png"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <title> Weighted Policy Optimization for Reasoning in Diffusion Language Models
+        </title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="static/css/bulma.min.css" />
+        <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+        <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+        <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+        />
+        <link rel="stylesheet" href="static/css/index.css" />
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+        <script defer src="static/js/fontawesome.all.min.js"></script>
+        <script src="static/js/bulma-carousel.min.js"></script>
+        <script src="static/js/bulma-slider.min.js"></script>
+        <script src="static/js/index.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+
+    <body>
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <h1 class="title is-1 publication-title">
+                                 \(\mathtt{wd1}\): Weighted Policy Optimization for Reasoning in Diffusion Language Models
+                            </h1>
+
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <a
+                                        href="https://scholar.google.com/citations?hl=en&user=VVaL9mwAAAAJ"
+                                        target="_blank"
+                                        >Xiaohang Tang</a
+                                    ><sup>1,2,*</sup>,</span
+                                >
+                                <span class="author-block">
+                                    <a
+                                        href="https://raresdolga.github.io/"
+                                        target="_blank"
+                                        >Rares Dolga</a
+                                    ><sup>1,3,*</sup>,</span
+                                >
+                                <span class="author-block">
+                                    <a
+                                        href="https://swyoon.github.io/"
+                                        target="_blank"
+                                        >Sangwoong Yoon</a
+                                    ><sup>1</sup>,</span
+                                >
+                                <span class="author-block">
+                                    <a
+                                        href="https://ilijabogunovic.com/"
+                                        target="_blank"
+                                        >Ilija Bogunovic</a
+                                    ><sup>1</sup>,</span
+                                >
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block"
+                                    ><sup>1</sup>University College London (UCL) AI Centre</span
+                                >
+                                <span class="author-block"
+                                    ><sup>2</sup>UCL Department of Statistical Science</span
+                                >
+                                <span class="author-block"
+                                    ><sup>3</sup>UiPath</span
+                                >
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <div class="publication-links">
+                                    <span class="link-block">
+                                        <a
+                                            href="https://ucl-diffusion-reasoning.github.io/preprint/wd1.pdf"
+                                            target="_blank"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </span>
+                                            <span>Paper</span>
+                                        </a>
+                                    </span>
+
+                                    <span class="link-block">
+                                        <a
+                                            href="https://github.com/xiaohangt/wd1"
+                                            target="_blank"
+                                            class="external-link button is-normal is-rounded is-dark"
+                                        >
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                            <span>Code</span>
+                                        </a>
+                                    </span>
+
+                                </div>
+                            </div>
+
+                            <p style="text-align: center; margin-top: 20px; font-size: 24px;">
+                                <strong>TL;DR:</strong> <span style="color: black;">We introduce \(\mathtt{wd1}\), a weighted policy optimization method for reasoning diffusion-based large language models (dLLMs).
+                                </span>
+ 
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hero is-small">
+            <div class="hero-body">
+                <div
+                    class="container"
+                    style="
+                        display: flex;
+                        justify-content: center;
+                        gap: 1px;
+                    "
+                >
+                    <div class="item" style="text-align: center">
+                        <img
+                            src="static/images/comparison.png"
+                            alt="wd1_vs_d1"
+                            style="width: 100%; max-width: 1000px;"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="section"
+            id="Intro"
+            style="text-align: center; font-weight: bold; position: relative; padding: 50px 20px;"
+        >
+            <div
+            style="
+                width: 100%;
+                height: 1px;
+                background-color: rgba(0, 0, 0, 0.1);
+                margin: 0 auto 15px auto;
+                "
+            ></div>
+
+            <div
+                style="
+                    position: absolute;
+                    bottom: -10px;
+                    right: 50px;
+                    font-weight: bold;
+                    font-size: 1rem;
+                    color: #666;
+                    font-style: italic;
+                "
+            >
+            </div>
+        </section>
+
+        <section class="section" id="Introduction">
+            <div class="container is-max-desktop content">
+                <h2 class="title" style="font-size: 1.6rem; font-family: 'Times New Roman', serif;">
+                    Challenges 
+                </h2>
+
+                <p style="font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;">
+                    A key challenge in applying reinforcement learning (RL) to dLLMs is the intractability of their likelihood functions. Existing RL methods for dLLMsrely heavily on the likelihood approximation \( \pi \approx \phi^{\pi} \) [1-3]:
+                </p>
+                <div class="item" style="text-align: center">
+                    <img
+                        src="static/images/diffu-grpo.png"
+                        alt="wd1_vs_d1"
+                        style="width: 75%; max-width: 1000px;"
+                    />
+                </div>
+                <p style="font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;">
+                    The likelihood approximation can lead to large computational overhead and large bias in the policy ratio.
+                </p>
+
+                <h2 class="title" style="font-size: 1.6rem; font-family: 'Times New Roman', serif;">
+                    Method
+                </h2>
+
+                <p style="font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;">
+                    We propose \(\mathtt{wd1}\), with objective derived from the reverse-KL-constrained policy optimization objective, which <b>dispenses with explicit policy ratios and relies on a single likelihood</b> \( \pi_{\theta} \) :
+                </p>
+                <div class="item" style="text-align: center">
+                    <img
+                        src="static/images/wd1_objective.png"
+                        alt="wd1_vs_d1"
+                        style="width: 75%; max-width: 1000px;"
+                    />
+                </div>
+                <p style="font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;">
+                    The aim of \(\mathtt{wd1}\) is simple: increasing the probability of completions with higher \(\hat{A}_i\) values and decreasing it for lower ones, reinforcing beneficial outcomes and discouraging detrimental ones.
+                </p>
+            </div>
+
+
+            <div class="container is-max-desktop content">
+                <h2 class="title" style="font-size: 1.6rem; font-family: 'Times New Roman', serif;">
+                    Experiments
+                </h2>
+                <p style="font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;">
+                    \( \mathtt{wd1} \) <b>without supervised fine-tuning</b>, consistently outperforms our reproduced implementation of \( \mathtt{d1} \). Notably, <b>\( \mathtt{wd1} \) surpasses \( \mathtt{d1} \) by 8% in test accuracy on the Sudoku, and achieves up to a 25% improvement on Countdown</b> with maximum length 256. Relative to the base LLaDA model, the performance gain reaches 38%.
+                </p>
+                <div class="item" style="text-align: center">
+                    <img
+                        src="static/images/exp1.png"
+                        alt="wd1_vs_d1"
+                        style="width: 75%; max-width: 1000px;"
+                    />
+                </div>
+                <br><br>
+                <p style="font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;">
+                    \( \mathtt{wd1} \) demonstrates additional computational efficiency in training:
+                </p>
+                <div class="item" style="text-align: center">
+                    <img
+                        src="static/images/exp2.png"
+                        alt="wd1_vs_d1"
+                        style="width: 75%; max-width: 1000px;"
+                    />
+                </div>
+                <br><br>
+                <p style="font-size: 1.3rem; font-family: 'Times New Roman', Times, serif;">
+                    The average training reward of \( \mathtt{wd1} \) increases faster and dynamics is more stable:
+                </p>
+                <div class="item" style="text-align: center">
+                    <img
+                        src="static/images/combined_rewards_plot_row.png"
+                        alt="wd1_vs_d1"
+                        style="width: 100%; max-width: 1000px;"
+                    />
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+                <h2 class="title" style="font-family: 'Times New Roman', serif;">
+                    BibTeX
+                </h2>
+                <pre><code>@misc{nie2025largelanguagediffusionmodels,
+      title={Large Language Diffusion Models}, 
+      author={Shen Nie and Fengqi Zhu and Zebin You and Xiaolu Zhang and Jingyang Ou and Jun Hu and Jun Zhou and Yankai Lin and Ji-Rong Wen and Chongxuan Li},
+      year={2025},
+      eprint={2502.09992},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2502.09992}, 
+}</code></pre>
+            </div>
+        </section> -->
+
+
+        <section class="section" id="refer">
+            <div class="container is-max-desktop content">
+                <h2 class="title">References</h2>
+                <blockquote>
+                    <p>
+                        [1] Siyan Zhao, Devaansh Gupta, Qinqing Zheng, and Aditya Grover. d1: Scaling Reasoning in Diffusion Large
+                        Language Models via Reinforcement Learning. arXiv preprint arXiv:2504.12216, 2025.
+                    </p>
+                    <p>
+                        [2] Shen Nie, Fengqi Zhu, Chao Du, Tianyu Pang, Qian Liu, Guangtao Zeng, Min Lin, and Chongxuan Li. Scaling Up
+                        Masked Diffusion Models on Text. arXiv preprint arXiv:2410.18514, 2024.
+                    </p>
+                    <p>
+                        [3] Ling Yang, Ye Tian, Bowen Li, Xinchen Zhang, Ke Shen, Yunhai Tong, and Mengdi Wang. Mmada: Multimodal
+                        Large Diffusion Language Models. arXiv preprint arXiv:2505.15809, 2025.
+                    </p>
+                </blockquote>
+            </div>
+        </section>
+
+    </body>
+</html>
